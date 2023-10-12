@@ -1,3 +1,4 @@
+import {useNavigate} from "react-router-dom"
 import "./css/Login.css";
 import React from 'react';
 import Recipe from "./img/recipe.png";
@@ -6,8 +7,10 @@ import Apple from './img/apple.png';
 import Instagram from './img/insta.png';
 
 const Login = () => {
-    const loginBtn = id => {
-        alert(id + "로그인 버튼 클릭");
+    const navigate = useNavigate();
+
+    const navigateToMain = () => {
+        navigate("/MagicTest");
     }
 
     return (
@@ -16,15 +19,15 @@ const Login = () => {
                 <h1 className="login-head">Welcome to Hogwarts!</h1>
                 <div className="login-div">
                     <img src={Recipe} className="login-recipe" alt="loginRecipe"/>
-                    <div className="login-btn" onClick={()=>{loginBtn("Google")}}>
+                    <div className="login-btn" onClick={navigateToMain}>
                         <img src={Google} className="login-icon" alt="google"/>
                         <h3>sign in with google</h3>
                     </div>
-                    <div className="login-btn" onClick={()=>{loginBtn("Apple")}}>
+                    <div className="login-btn" onClick={navigateToMain}>
                         <img src={Apple} className="login-icon" alt="apple"/>
                         <h3>sign in with apple</h3>
                     </div>
-                    <div className="login-btn" onClick={()=>{loginBtn("Instagram")}}>
+                    <div className="login-btn" onClick={navigateToMain}>
                         <img src={Instagram} className="login-icon" alt="instagram"/>
                         <h3>sign in with instagram</h3>
                     </div>

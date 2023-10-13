@@ -8,6 +8,11 @@
 
 ![screenshot](./src/img/bg.png)
 
+**Using**
+<br><br>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
+<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
+
 **Function**
 
 - [x] Login Window

@@ -16,11 +16,17 @@ const MagicResult = () => {
   const grade = location.state.grade; // 결과 값을 가져옴
 
   //메인페이지이동
-  const handleGoToMainPage = () => {
-    navigate("/Login"); // 이동할 경로 ("/main")를 설정하세요.
-  };
+  // const handleGoToMainPage = () => {
+  //   navigate("/Login"); // 이동할 경로 ("/main")를 설정하세요.
+  // };
   const handleGoToMagicTestPage = () => {
     navigate("/MagicTest"); // 이동할 경로 ("/main")를 설정하세요.
+  };
+
+  const handleTestComplete = () => {
+    navigate("/FR", {
+      state: { grade },
+    });
   };
 
   return (
@@ -42,8 +48,11 @@ const MagicResult = () => {
           <button id="b1" onClick={handleGoToMagicTestPage}>
             Again
           </button>
-          <button id="b2" onClick={handleGoToMainPage}>
+          {/* <button id="b2" onClick={handleGoToMainPage}>
             Main
+          </button> */}
+          <button id="b2" onClick={handleTestComplete}>
+            Next
           </button>
         </div>
       </div>

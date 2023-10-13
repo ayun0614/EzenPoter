@@ -3,7 +3,7 @@ import { Howl } from "howler";
 
 function useSound(src, volume = 1) {
     let sound;
-    const soundStop = () => sound.stop();
+    // const soundStop = () => sound.stop();
     const soundPlay = (src) => {
         sound = new Howl({ src });
         sound.volume(volume);

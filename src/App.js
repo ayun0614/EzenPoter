@@ -5,10 +5,10 @@ import "./css/App.css";
 import { default as Login } from "./Login";
 import { default as Sidebar } from "./Sidebar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import FR from "./FR.js";
 import MagicTest from "./MagicTest.js";
 import MagicResult from "./MagicResult.js";
-import NotFound from "./NotFound11";
+import NotFound from "./NotFound11.js";
 
 function App() {
   const BackgroundMusic = () => {
@@ -18,16 +18,17 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <BackgroundMusic />
-
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/MagicTest/*" element={<MagicTest />} />
           <Route path="/MagicResult/*" element={<MagicResult />} />
+          <Route path="/FR/*" element={<FR />} />
           <Route path="*" element={<NotFound />} />{" "}
         </Routes>
+
         <Sidebar />
+        <BackgroundMusic />
       </BrowserRouter>
     </div>
   );

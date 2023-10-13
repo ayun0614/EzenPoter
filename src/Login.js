@@ -1,40 +1,44 @@
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import "./css/Login.css";
-import React from 'react';
+import React from "react";
 import Recipe from "./img/recipe.png";
-import Google from './img/google.png';
-import Apple from './img/apple.png';
-import Instagram from './img/insta.png';
+import Google from "./img/google.png";
+import Apple from "./img/apple.png";
+import Instagram from "./img/insta.png";
 
 const Login = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const navigateToMain = () => {
-        navigate("/MagicTest");
-    }
+  const navigateToMain = () => {
+    navigate("/MagicTest");
+  };
 
-    return (
-        <body>
-            <section>
-                <h1 className="login-head">Welcome to Hogwarts!</h1>
-                <div className="login-div">
-                    <img src={Recipe} className="login-recipe" alt="loginRecipe"/>
-                    <div className="login-btn" onClick={navigateToMain}>
-                        <img src={Google} className="login-icon" alt="google"/>
-                        <h3>sign in with google</h3>
-                    </div>
-                    <div className="login-btn" onClick={navigateToMain}>
-                        <img src={Apple} className="login-icon" alt="apple"/>
-                        <h3>sign in with apple</h3>
-                    </div>
-                    <div className="login-btn" onClick={navigateToMain}>
-                        <img src={Instagram} className="login-icon" alt="instagram"/>
-                        <h3>sign in with instagram</h3>
-                    </div>
-                </div>
-            </section>
-        </body>
-    );
+  const navigateToFinal = () => {
+    navigate("/FR");
+  };
+
+  return (
+    <body>
+      <section>
+        <h1 className="login-head">Welcome to Hogwarts!</h1>
+        <div className="login-div">
+          <img src={Recipe} className="login-recipe" alt="loginRecipe" />
+          <div className="login-btn" onClick={navigateToMain}>
+            <img src={Google} className="login-icon" alt="google" />
+            <h3>sign in with google</h3>
+          </div>
+          <div className="login-btn" onClick={navigateToFinal}>
+            <img src={Apple} className="login-icon" alt="apple" />
+            <h3>sign in with apple</h3>
+          </div>
+          <div className="login-btn" onClick={navigateToMain}>
+            <img src={Instagram} className="login-icon" alt="instagram" />
+            <h3>sign in with instagram</h3>
+          </div>
+        </div>
+      </section>
+    </body>
+  );
 };
 
 export default Login;

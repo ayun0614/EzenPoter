@@ -179,7 +179,7 @@ const MagicTest = () => {
     { grade: "2", minScore: 6, maxScore: 8 },
     { grade: "1", minScore: 0, maxScore: 6 },
   ];
-
+  
   return (
     <div id="in">
       <div id="ini">
@@ -220,6 +220,7 @@ const MagicTest = () => {
         )}
       </div>
     </div>
+    
   );
 };
 

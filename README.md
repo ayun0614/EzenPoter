@@ -1,6 +1,6 @@
 # EzenPoter
 >[!Note]
-> EZEN Academy Project <br>
+> EZEN Academy Web Application Project <br>
 > Topic : Harry Poter Level Test <br>
 > 2023.10.02 ~ 2023.10.31
 

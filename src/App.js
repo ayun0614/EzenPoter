@@ -11,25 +11,26 @@ import MagicResult from "./MagicResult.js";
 import NotFound from "./NotFound11";
 
 function App() {
-	const BackgroundMusic = () => {
-    	useSound(BGM, 0.2);
-	};
+  const BackgroundMusic = () => {
+    useSound(BGM, 0.2);
+  };
 
-return (
+  return (
     <div className="App">
-    	<BrowserRouter>
-        	<BackgroundMusic />
-        	
-			<Routes>
-				<Route path="/" element={<Login />} />
-				<Route path="/Login" element={<Login />} />
-				<Route path="/MagicTest/*" element={<MagicTest />} />
-				<Route path="/MagicResult/*" element={<MagicResult />} />
-				<Route path="*" element={<NotFound />} />{" "}
-			</Routes>
-        	<Sidebar />
-    	</BrowserRouter>
-    </div>);
+      <BrowserRouter>
+        <BackgroundMusic />
+
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/MagicTest/*" element={<MagicTest />} />
+          <Route path="/MagicResult/*" element={<MagicResult />} />
+          <Route path="*" element={<NotFound />} />{" "}
+        </Routes>
+        <Sidebar />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

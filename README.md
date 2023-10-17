@@ -21,12 +21,12 @@
 - [x] Login Window
 - [x] Background Music
 - [x] Level Test
-- [ ] Dormitory Test
+- [x] Dormitory Test
 - [ ] Select Cane
 - [ ] Result Page
-- [ ] Import Picture
-- [ ] Save Result
+- [x] Import Picture
+- [x] Save Result
 - [ ] Share Result
-- [ ] Side Menu
+- [x] Side Menu
 
 <br>

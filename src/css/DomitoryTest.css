@@ -2,51 +2,42 @@ body {
     background-image: url("../img/bg.png");
 }
 
-#in {
+#bodyDiv {
     /* border: 1px solid black; */
-
     border-radius: 30px;
     margin: 0 auto;
     width: 700px;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    padding-top: 50px;
-
     font-size: 50px;
     text-align: center;
 }
 
-#ini {
-    /* border: 1px solid greenyellow; */
+#headBox {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    /*border: 1px solid greenyellow; */
     display: flow-root;
     justify-content: space-between;
     align-items: center;
 }
 
-#ini>div {
-    /* ini 내부의 각 div 요소에 적용되는 스타일 */
+#headBox>div {
     margin: 50px;
-    /* 마진을 추가하여 간격 조절 (원하는 크기로 조정) */
     padding: 10px;
-    /* 패딩을 추가하여 내부 여백 조절 (원하는 크기로 조정) */
 }
 
-#qq {
-    width: auto;
+#answerBox {
+    width: Z00px;
     height: auto;
     margin: auto;
-    display: flex;
 }
 
-#q1 {
-    /* 글자 색 */
+#answer {
     /* border: 1px solid red; */
-    border-radius: 40px;
+    border-radius: 20px;
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
-    width: 950px;
-    height: 180px;
+    height: 80px;
     margin: 20px;
     font-size: 20px;
     text-align: center;
@@ -55,11 +46,15 @@ body {
     display: flex;
 }
 
-div#q11 {
-    /* border: 1px solid brown; */
+div#questionText {
+    /*border: 1px solid purple;*/
+    width: 700px;
+    /*여기 값 확인*/
+    color: white;
     font-size: 27px;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #one {
@@ -74,7 +69,7 @@ div#q11 {
     height: 295px;
 }
 
-#g {
+#gaugeBarDiv {
     /* border: 1px solid red; */
     width: auto;
     height: 120px;
@@ -91,31 +86,28 @@ div#q11 {
 #progress::-webkit-progress-bar {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
-    box-shadow: inset 3px 3px 10px #ccc;
+    /*box-shadow: inset 3px 3px 10px #ccc;*/
 }
 
 #progress::-webkit-progress-value {
     border-radius: 30px;
-    background: #1d976c;
-    background: linear-gradient(to right, #a1a1a1, #1f4baa);
+    background: rgba(224, 167, 60, 0.7);
+    /*background: linear-gradient(to right, #a1a1a1, #1f4baa);*/
     transition: width 0.8s;
 }
 
-#m {
-    /* border: 1px solid violet; */
-    width: auto;
+div#questionBox {
+    display: contents;
+    border: 1px solid white;
+    width: 800px;
     height: auto;
 }
 
-#pic7 {
-    margin-top: 30px;
+#frameImg {
+    width: 700px;
+    /*border: 1px dotted pink; */
     display: flex;
     justify-content: center;
-}
-
-#q11 {
-    color: white;
-    font-size: 80px;
 }
 
 div#q1.answer.last-question {
@@ -134,28 +126,14 @@ div#q1.answer.last-question {
     color: white;
 }
 
-#b1 {
+#againBtn,
+#mainBtn {
     width: 130px;
     height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: rgba(255, 214, 69);
-    border-radius: 40px;
-    margin-right: 10px;
-    margin-left: auto;
-    font-size: 30px;
-    font-style: bold;
+    border-radius: 10px;
+    font-size: 25px;
     color: black;
 }
-
-#b2 {
-    width: 130px;
-    height: 50px;
-    background-color: rgba(255, 214, 69);
-    border-radius: 40px;
-    margin-left: 10px;
-    margin-right: auto;
-    font-size: 30px;
-    font-style: bold;
-    color: black;
-}
-
-#result {}

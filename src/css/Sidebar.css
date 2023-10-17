@@ -1,38 +1,29 @@
-aside{
-    top: 0px;
-    margin:auto;
+aside {
+    position: absolute;
+    right:10px;
+    top: 300px;
 }
 
-.menu{
-    position:sticky;
+.menu {
     width: 149px;
     height: 359px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 14px 14px 75px 75px;
     margin: auto;
 }
 
-.upper{
-    width: 149px;
-    height: 66px;
-    margin: auto;
-    margin-top: 15px;
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 75px 75px 75px 75px;
-}
-
-.asideImg{
+.asideImg {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.asideUpper{
+.asideUpper {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.asideHr{
+.asideHr {
     margin-left: 15px;
     margin-right: 15px;
-    border-color: rgba(255,255,255,0.4);
+    border-color: rgba(255, 255, 255, 0.4);
 }

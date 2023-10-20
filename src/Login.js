@@ -9,16 +9,8 @@ import Instagram from "./img/insta.png";
 const Login = () => {
     const navigate = useNavigate();
 
-    const navigateToMain = () => {
+    const navigateToStart = () => {
         navigate("/DomitoryTest");
-    };
-
-    const navigateToFinal = () => {
-        navigate("/FR");
-    };
-
-    const navigateToCH4 = () => {
-        navigate("/CaneTest");
     };
 
     return (
@@ -27,15 +19,15 @@ const Login = () => {
                 <h1 className="login-head">Welcome to Hogwarts!</h1>
                 <div className="login-div">
                     <img src={Recipe} className="login-recipe" alt="loginRecipe" />
-                    <div className="login-btn" onClick={navigateToMain}>
+                    <div className="login-btn" onClick={navigateToStart}>
                         <img src={Google} className="login-icon" alt="google" />
                         <h3>sign in with google</h3>
                     </div>
-                    <div className="login-btn" onClick={navigateToFinal}>
+                    <div className="login-btn" onClick={navigateToStart}>
                         <img src={Apple} className="login-icon" alt="apple" />
                         <h3>sign in with apple</h3>
                     </div>
-                    <div className="login-btn" onClick={navigateToCH4}>
+                    <div className="login-btn" onClick={navigateToStart}>   
                         <img src={Instagram} className="login-icon" alt="instagram" />
                         <h3>sign in with instagram</h3>
                     </div>

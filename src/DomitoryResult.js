@@ -23,24 +23,35 @@ const DomitoryResult = () => {
     };
 
     const MoveMagicTestPage = () => {
-        navigate("/MagicTest");
+        navigate("/MagicTest", {
+            state: { domitory },
+        });
     };
-
+    console.log(domitory);
     // 이미지 alt 출력
     return (
         <div id="bodyBox">
             <div id="bodyInBox">
                 <img src={result_bg} id="resultBg" alt="배경" />
                 <div id="domitoryImgBox">
-                    {domitory === "그리핀도르" && <img src={result_G} id="domitoryImg" alt="그리핀도르 이미지" />}
-                    {domitory === "레번클로" && <img src={result_R} id="domitoryImg" alt="레번클로 이미지" />}
-                    {domitory === "후플푸프" && <img src={result_H} id="domitoryImg" alt="후플푸프 이미지" />}
-                    {domitory === "슬리데린" && <img src={result_S} id="domitoryImg" alt="슬리데린 이미지" />}
+                    {domitory === "그리핀도르" && (
+                        <img src={result_G} id="domitoryImg" alt="그리핀도르 이미지" />
+                    )}
+                    {domitory === "레번클로" && (
+                        <img src={result_R} id="domitoryImg" alt="레번클로 이미지" />
+                    )}
+                    {domitory === "후플푸프" && (
+                        <img src={result_H} id="domitoryImg" alt="후플푸프 이미지" />
+                    )}
+                    {domitory === "슬리데린" && (
+                        <img src={result_S} id="domitoryImg" alt="슬리데린 이미지" />
+                    )}
                 </div>
                 <div id="domitoryText">
                     {" "}
                     <span>당신의 기숙사는</span> <br></br>
-                    {domitory}<br></br>
+                    {domitory}
+                    <br></br>
                     <span>기숙사 설명</span>
                 </div>
                 <div id="btnBox">

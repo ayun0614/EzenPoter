@@ -4,11 +4,37 @@ import "../src/css/FR.css";
 import st1 from "../src/img/st1.png";
 import html2canvas from "html2canvas";
 import g5 from "../src/img/g5.png";
+import magicStick from "../src/img/지팡이.png";
+
+import result_G from "./img/domitory_g.png";
+import result_R from "./img/domitory_r.png";
+import result_H from "./img/domitory_h.png";
+import result_S from "./img/domitory_s.png";
+
 const FR = () => {
     const navigate = useNavigate();
     const [image, setImage] = useState(null);
     const location = useLocation(); // useLocation 훅 사용
-    const grade = location.state.grade; // 결과 값을 가져옴
+    let grade, selectedCard, domitory;
+
+    if (location.state.grade == null) {
+        grade = "";
+    } else {
+        grade = location.state.grade; // 결과 값을 가져옴
+    }
+
+    if (location.state.selectedCard == null) {
+        selectedCard = "";
+    } else {
+        selectedCard = location.state.selectedCard; // 결과 값을 가져옴
+    }
+
+    if (location.state.domitory == null) {
+        domitory = "";
+    } else {
+        domitory = location.state.domitory; // 결과 값을 가져옴
+    }
+
     const groupRef = useRef(null);
 
     const handleGoToMainPage = () => {
@@ -38,17 +64,19 @@ const FR = () => {
     };
 
     console.log(grade);
+    console.log(selectedCard);
+    console.log(domitory);
     return (
-        <div class="item" id="itm">
-            <div class="congratulations" id="congrats">
+        <div className="item" id="itm">
+            <div className="congratulations" id="congrats">
                 Congratulations on Admission!
             </div>
-            <div class="idcard" id="card">
+            <div className="idcard" id="card">
                 ID CARD
             </div>
 
-            <div class="group" id="grp" ref={groupRef}>
-                <div class="rectangle" id="rec">
+            <div className="group" id="grp" ref={groupRef}>
+                <div className="rectangle" id="rec">
                     <div id="bg1">
                         <div id="pic4">
                             <label for="imageInput" id="customUploadButton">
@@ -56,7 +84,7 @@ const FR = () => {
                             </label>
                             <input
                                 type="file"
-                                id="imageInput"
+                                id="imageInput" item
                                 accept="image/*"
                                 onChange={fileUpload}
                             />
@@ -68,8 +96,26 @@ const FR = () => {
                                 />
                             )}
                         </div>
-                        <div id="pic2"></div>
-                        <div id="pic3"></div><div><img src={g5} class="light" id="p2" alt=""></img></div>
+                        <div id="pic2">
+                            {domitory === "그리핀도르" && (
+                                <img src={result_G} id="domitoryImg" alt="그리핀도르 이미지" />
+                            )}
+                            {domitory === "레번클로" && (
+                                <img src={result_R} id="domitoryImg" alt="레번클로 이미지" />
+                            )}
+                            {domitory === "후플푸프" && (
+                                <img src={result_H} id="domitoryImg" alt="후플푸프 이미지" />
+                            )}
+                            {domitory === "슬리데린" && (
+                                <img src={result_S} id="domitoryImg" alt="슬리데린 이미지" />
+                            )}
+                        </div>
+                        <div id="pic3">
+                            <img src={magicStick} className="magicStick" id="p3" alt=""></img>
+                        </div>
+                        <div>
+                            <img src={g5} className="light" id="p2" alt=""></img>
+                        </div>
                         <img
                             src={st1}
                             id="p1"
@@ -83,19 +129,19 @@ const FR = () => {
                             }}
                         ></img>
                         <div id="mtext">
-                            <div class="iden1">STUDENT</div>
-                            <div class="iden2">NAME:</div>
-                            <div class="iden3">BIRTH:2020/02/20</div>
-                            <div class="iden4">grade: {grade} 학년</div>
+                            <div className="iden1">STUDENT</div>
+                            <div className="iden2">NAME:</div>
+                            <div className="iden3">BIRTH:2020/02/20</div>
+                            <div className="iden4">GRADE: {grade} 학년</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="op">
-                <button class="save" value="save" onClick={saveImage}>
+                <button className="save" id="save" onClick={saveImage}>
                     SAVE
                 </button>
-                <button class="main" value="main" onClick={handleGoToMainPage}>
+                <button className="main" id="main" onClick={handleGoToMainPage}>
                     MAIN
                 </button>
             </div>

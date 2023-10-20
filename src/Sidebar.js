@@ -1,5 +1,5 @@
 import "./css/Sidebar.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import AsideHeader from "./img/aside_header.png";
 import AsideImg1 from "./img/aside_img1.png";
 import AsideImg2 from "./img/aside_img2.png";
@@ -7,19 +7,51 @@ import AsideImg3 from "./img/aside_img3.png";
 
 const Sidebar = () => {
     const navigate = useNavigate();
+    const location = useLocation();
 
-    const navigateToMain = () => {
-        navigate("/MagicTest");
+    let grade, domitory, selectedCard;
+
+    console.log(location.pathname);
+
+    if(location.pathname === "/Login"){
+        grade = 0;
+        domitory = 0;
+        selectedCard = 0;
+    }else{
+        if(location.state.domitory == null){
+            domitory = "";
+        }else{
+            domitory = location.state.domitory;
+        }
+    
+        if(location.state.grade == null){
+            grade = "";
+        }else{
+            grade = location.state.grade;
+        }
+    
+        if(location.state.selectedCard == null){
+            selectedCard = "";
+        }else{
+            selectedCard = location.state.selectedCard;
+        }
+    }
+    const navigateToDT = () => {
+        navigate("/DomitoryTest", { state: { grade: grade, seletedCard: selectedCard } });
+    };
+    const navigateToMT = () => {
+        navigate("/MagicTest", { state: { domitory: domitory, seletedCard: selectedCard } });
     };
 
     const navigateToCT = () => {
-        navigate("/CaneTest");
+        navigate("/CaneTest", { state: { domitory: domitory, grade: grade } });
     };
 
     const changePage = (page) => {
         if (page === "img1") {
+            navigateToDT();
         } else if (page === "img2") {
-            navigateToMain();
+            navigateToMT();
         } else if (page === "img3") {
             navigateToCT();
         }
@@ -58,7 +90,6 @@ const Sidebar = () => {
                         }}
                     />
                 </div>
-
             </section>
         </aside>
     );

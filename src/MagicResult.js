@@ -21,7 +21,9 @@ const MagicResult = () => {
   //   navigate("/Login"); // 이동할 경로 ("/main")를 설정하세요.
   // };
   const handleGoToMagicTestPage = () => {
-    navigate("/MagicTest"); // 이동할 경로 ("/main")를 설정하세요.
+    navigate("/MagicTest", {
+      state: { grade, domitory },
+    });
   };
 
   const handleTestComplete = () => {

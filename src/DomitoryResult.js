@@ -19,7 +19,9 @@ const DomitoryResult = () => {
     //};
 
     const MoveDomitoryTestPage = () => {
-        navigate("/DomitoryTest");
+        navigate("/DomitoryTest",{
+            state: { domitory },
+        });
     };
 
     const MoveMagicTestPage = () => {

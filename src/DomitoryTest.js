@@ -149,45 +149,6 @@ const DomitoryTest = () => {
         } // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [page, questionList.length]);
 
-    //function calDomitory(score) {
-    //for (const range of reusltDomitory) {
-    // if (score >= range.minScore && score <= range.maxScore) {
-    //    return range.domitory;
-    //   }
-    //  }
-    //  return "N/A"; // 범위에 해당하는 등급이 없는 경우
-    // }
-
-    /*
-    const end = 0;
-     function calDomitory(score) {
-         for (const range of reusltDomitory) {
-         for (const i = 0; i > 5; i++) {
-           if (end > score[i]) {
-             end = score[i];
- 
-           }
-           return score;
-         }
-     }
-         return "N/A"; // 범위에 해당하는 등급이 없는 경우
-       }
- 
-       const reusltDomitory = [
-       { domitory: "그리핀도르", name: "G" },
-       { domitory: "레번클로", name: "R" },
-       { domitory: "후플푸프", name: "H" },
-       { domitory: "슬리데린", name: "S" },
-     ];
-     */
-
-    //학년 구별 점수
-    //const reusltDomitory = [
-    //{ domitory: "그리핀도르", minScore: 10, maxScore: 12 },
-    //{ domitory: "레번클로", minScore: 8, maxScore: 10 },
-    // { domitory: "후플푸프", minScore: 6, maxScore: 8 },
-    // { domitory: "슬리데린", minScore: 0, maxScore: 6 },
-    //];
 
     const calmax = (domitoryList) => {
         let max = 0;
@@ -208,11 +169,11 @@ const DomitoryTest = () => {
             <div id="headBox">
                 <div id="questionBox">
                     <div id="frameImg">
-                        <img src={on1} alt="" />
+                        <img src={on2} alt="" />
                     </div>
                     <div id="questionText">{questionList[page].q[0]}</div>
                     <div id="frameImg">
-                        <img src={on2} alt="" />
+                        <img src={on1} alt="" />
                     </div>
                 </div>
             </div>

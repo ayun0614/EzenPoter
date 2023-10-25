@@ -20,13 +20,12 @@ const CaneTest = () => {
         { id: 5, isFlipped: false, top: "350px", left: "20px", src: card5 },
         { id: 6, isFlipped: false, top: "350px", left: "70px", src: card6 },
     ]);
-
+    
     const [selectedCard, setSelectedCard] = useState(null);
     const [selectedCardImg, setSelectedCardImg] = useState(g1);
     const [text,setText] = useState(null);
     const navigate = useNavigate();
     const location = useLocation(); // useLocation 훅 사용
-    
     
     let grade, domitory;
 
@@ -43,7 +42,6 @@ const CaneTest = () => {
     }
 
     const handleCardClick = (id) => {
-
         // 이미 선택된 카드가 있으면 클릭 무시
         if (selectedCard !== null) {
             handleTestComplete();
@@ -54,7 +52,7 @@ const CaneTest = () => {
                 if (card.id === id) {
                     setSelectedCardImg(card.src);
                     setSelectedCard(id);
-                    setText("다음으로 이동하실려면 화면을 클릭해 주세요.");
+                    setText("다음으로 이동하실려면 화면을 클릭해 주세요");
 
                     // 카드를 뒤집어 활성화 상태로 변경
                     return {
@@ -74,10 +72,10 @@ const CaneTest = () => {
 
     const handleTestComplete = () => {
         if(selectedCard!==null){
-            navigate("/FR", {
-                state: { grade, domitory, selectedCard },
-            });
-        }
+        navigate("/FR", {
+            state: { grade, domitory, selectedCard },
+        });
+}
     };
 
     return (
@@ -127,7 +125,7 @@ const CaneTest = () => {
             ) : (
                 <div className={`card-large hidden`}></div>
             )}
-            <h4 className="clicked-text">{text}</h4>
+<h4 className="clicked-text">{text}</h4>
         </div>
     );
 };

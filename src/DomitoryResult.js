@@ -53,8 +53,6 @@ const DomitoryResult = () => {
                     {" "}
                     <span>당신의 기숙사는</span> <br></br>
                     {domitory}
-                    <br></br>
-                    <span>기숙사 설명</span>
                 </div>
                 <div id="btnBox">
                     <button id="againBtn" onClick={MoveDomitoryTestPage}>

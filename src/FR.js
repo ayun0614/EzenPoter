@@ -64,8 +64,7 @@ const FR = () => {
     const saveImage = () => {
         if (groupRef.current) {
             // div 요소를 캡처합니다.
-            html2canvas(groupRef.current, { backgroundColor: null }).then(
-                (canvas) => {
+            html2canvas(groupRef.current, {backgroundColor:null}).then((canvas) => {
                     const imgData = canvas.toDataURL("image/png");
 
                     // 이미지를 파일로 저장합니다.
@@ -113,9 +112,9 @@ const FR = () => {
                 ID CARD
             </div>
 
-            <div className="group" id="grp" ref={groupRef}>
-                <div className="rectangle" id="rec">
-                    <div id="bg1">
+            <div className="group" id="grp">
+                <div className="rectangle" id="rec" >
+                    <div id="bg1" ref={groupRef}>
                         <div id="pic4">
                             <label for="imageInput" id="customUploadButton">
                                 +
@@ -149,9 +148,6 @@ const FR = () => {
                             {domitory === "슬리데린" && (
                                 <img src={result_S} id="domitoryImg" alt="슬리데린 이미지" style={{ width: "90%", height: "90%" }} />
                             )}
-                            <div id="domitoryText2" style={{ color: "black", fontSize: "23px", fontFamily: "NanumMyeongjo", marginLeft: "10px", marginTop: "15px" }}>
-                                {domitory}
-                            </div>
                         </div>
                         <div id="pic3">
                             <img src={cane} className="magicStick" id="p3" alt=""></img>

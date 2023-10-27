@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     background-image: url("../img/bg.png");
 }
@@ -15,15 +22,15 @@ body {
 /* 카드 스타일 */
 .card {
     width: 100px;
-    height: 150px;
+    height: 210px;
     margin-right: 10px;
     position: relative;
     transition: transform 0.5s ease-in-out;
 }
 
 .card-img {
-    width: 150px !important;
-    height: 200px !important;
+    width: 200px !important;
+    height: 300px !important;
 }
 
 /* 클릭한 카드 */
@@ -73,14 +80,16 @@ body {
 
 /* CaneTest 메인 */
 .cane-test-main {
-    width: 700px !important;
-    margin: 0 auto !important;
+    width: 300px !important;
+    margin-left: 250px;
 }
 
 .clicked-text {
-    margin: auto;
-    margin-top: 400px;
+    font-family: 'SOYOMapleBoldTTF';
+    margin-left: 170px;
+    font-size: 35px;
+    margin-top: 500px;
     color: white;
-    width: 600px;
+    width: 900px;
     text-align: center;
 }

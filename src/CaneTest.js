@@ -13,12 +13,12 @@ import card6 from "../src/img/card6.png";
 
 const CaneTest = () => {
     const [cards, setCards] = useState([
-        { id: 1, isFlipped: false, top: "150px", left: "300px", src: card1 },
-        { id: 2, isFlipped: false, top: "150px", left: "350px", src: card2 },
-        { id: 3, isFlipped: false, top: "150px", left: "400px", src: card3 },
-        { id: 4, isFlipped: false, top: "350px", left: "-30px", src: card4 },
-        { id: 5, isFlipped: false, top: "350px", left: "20px", src: card5 },
-        { id: 6, isFlipped: false, top: "350px", left: "70px", src: card6 },
+        { id: 1, isFlipped: false, top: "30px", left: "500px", src: card1 },
+        { id: 2, isFlipped: false, top: "30px", left: "600px", src: card2 },
+        { id: 3, isFlipped: false, top: "30px", left: "700px", src: card3 },
+        { id: 4, isFlipped: false, top: "370px", left: "170px", src: card4 },
+        { id: 5, isFlipped: false, top: "370px", left: "270px", src: card5 },
+        { id: 6, isFlipped: false, top: "370px", left: "370px", src: card6 },
     ]);
     
     const [selectedCard, setSelectedCard] = useState(null);
@@ -87,7 +87,7 @@ const CaneTest = () => {
                         className={`card test ${card.isFlipped ? "cardRotate" : ""} ${card.id === selectedCard ? "clicked" : ""
                             }`}
                         onClick={() => handleCardClick(card.id)}
-                        style={{ top: card.top, left: card.left }}
+                        style={{ top: card.top, left: card.left}}
                     >
                         <div className={`front ${card.isFlipped ? "white" : "hidden"}`}>
                             <img
@@ -113,7 +113,7 @@ const CaneTest = () => {
                             }`}
                     >
                         {/* <img style={{width:"241px", height:"374px;"}} src={selectedCardImg} alt="" /> */}
-                        <img src={selectedCardImg} alt="" />
+                        <img src={selectedCardImg} alt="" style={{width: "350px", marginTop: "-140px"}}/>
                     </div>
                     <div
                         className={`back ${cards[selectedCard - 1].isFlipped ? "black" : ""

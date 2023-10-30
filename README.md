@@ -22,11 +22,10 @@
 - [x] Background Music
 - [x] Level Test
 - [x] Dormitory Test
-- [ ] Select Cane
-- [ ] Result Page
+- [x] Select Cane
+- [x] Result Page
 - [x] Import Picture
 - [x] Save Result
-- [ ] Share Result
 - [x] Side Menu
 
 <br>

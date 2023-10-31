@@ -1,245 +1,298 @@
 .out {
-  border: 1px solid pink;
+    border: 1px solid pink;
 }
+
 .light {
-  animation: blink 3s alternate infinite;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  white-space: nowrap;
-  background-color: rgb(255, 255, 255, 0);
-  position: absolute;
-  transform: translate(305%, 95%);
-  z-index: 1;
-  margin-left: 300px;
-  margin-top: 300px;
+    animation: blink 3s alternate infinite;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255, 0);
+    position: absolute;
+    transform: translate(280%, 102%);
+    z-index: 1;
+    margin-left: 300px;
+    margin-top: 300px;
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 #op {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  width: 50%;
-  /* border: 1px solid red; */
-  position: absolute;
-  transform: translate(0%, 1100%);
-}
-.save {
-  background-color: #ffd645;
-  font-size: 3rem;
-  font-weight: 400px;
-  border-radius: 2.1rem;
-  font-family: PoetsenOne, "Source Sans Pro";
-  width: 18.4rem;
+    display: flex;
+    width: auto;
+    /* border: 1px solid red; */
+    position: absolute;
+    height: auto;
 
-  text-align: center;
+    transform: translate(-00%, 670%);
 }
 
+.save,
 .main {
-  background-color: #ffd645;
-  font-size: 3rem;
-  font-weight: 400;
-  border-radius: 2.1rem;
-  font-family: PoetsenOne, "Source Sans Pro";
-  width: 18.4rem;
+    width: 180px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgba(255, 214, 69);
+    border-radius: 10px;
+    font-size: 25px;
+    color: black;
 }
+
 #fileInput {
-  /* font-size: px; */
-  width: 100%;
+    /* font-size: px; */
+    width: 100%;
 
-  background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
+
 #imageInput {
-  display: none;
+    display: none;
 }
-#customUploadButton {
-  background-color: none;
-  color: rgba(255, 255, 255, 0.1);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  position: fixed;
-  border-radius: 10px;
-  font-size: 40px;
-  top: 33%;
-  left: 33%;
-}
-#bg1 {
-  width: auto;
-  height: auto;
-  /* border: 2px solid blue; */
-  margin-left: 1%;
-  margin-top: -80px;
-  /* position: relative; */
-}
-#pic4 {
-  width: 200px;
-  height: 250px;
-  /* background-color: white; */
-  background-image: url("../img/pic4.png");
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.7;
-  position: absolute;
-  border: 3px solid black;
-  bottom: 25%;
-  z-index: 1;
-  transform: translate(40%, -60%);
-}
-#pic2 {
-  /* border: 1px solid red; */
-  width: 200px;
-  height: 230px;
-  background-color: red;
-  position: absolute;
-  transform: translate(305%, 95%);
-  z-index: 1;
-}
-#pic3 {
-  /* border: 1px solid black; */
-  width: 230px;
-  height: 79px;
-  background-color: green;
-  position: absolute;
-  transform: translate(150%, 530%);
-  z-index: 1;
-}
-#p1 {
-  /* border: 4px solid violet; */
-  padding-bottom: 0;
 
-  /* object-fit: fill; */
+#customUploadButton {
+    background-color: none;
+    color: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 10px;
+    font-size: 40px;
+    top: 33%;
+    left: 33%;
+}
+
+#bg1 {
+    width: auto;
+    height: auto;
+    /* border: 2px solid blue; */
+    margin-left: 1%;
+    margin-top: -80px;
+    /* position: relative; */
+}
+
+#pic4 {
+    width: 200px;
+    height: 250px;
+    /* background-color: white; 그림 관리*/
+    background-image: url("../img/pic4.png");
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    bottom: 23%;
+    z-index: 1;
+    transform: translate(45%, -05%);
+}
+
+#pic2 {
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 230px;
+    /* background-color: red; */
+    position: absolute;
+    transform: translate(210%, 50%);
+    z-index: 1;
+}
+
+#domitoryText2 {
+    transform: translate(81%, 6%);
+}
+
+#pic3 {
+    /* border: 1px solid black; */
+    width: 232px;
+    height: 79px;
+    position: absolute;
+    transform: translate(140%, 525%);
+    z-index: 1;
+}
+
+#p3 {
+    width: 232px;
+    height: 79px;
+}
+
+#p1 {
+    /* border: 4px solid violet; */
+    padding-bottom: 0;
+
+    /* object-fit: fill; */
 }
 
 .item {
-  align-items: center;
-  /* border: 3px solid pink; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 3.55rem 32.6rem 0rem 32.5rem;
-  position: relative;
-  width: 100%;
+    align-items: center;
+    /* border: 3px solid pink; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 3.55rem 32.6rem 0rem 32.5rem;
+    position: relative;
+    width: 100%;
 }
-.congratulations {
-  align-items: center;
-  color: #ffffff;
-  display: flex;
-  flex-shrink: 0;
-  font-family: STIX Two Text, "Source Sans Pro";
-  font-size: 3.6rem;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin-bottom: 4.25rem;
-  white-space: nowrap;
-}
-.group {
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.349999994);
-  /* border-radius: 6.5rem; */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
-  height: 720px;
-  margin: 0rem 10.5rem 12rem 10.5rem;
-  padding: 6.05rem 11.8rem 22.4rem 11.8rem;
-  width: 950px;
-  /* border: 3px solid violet; */
-}
-.idcard {
-  align-items: center;
-  color: #efcc73;
-  display: flex;
-  flex-shrink: 0;
-  font-family: STIX Two Text, "Source Sans Pro";
-  font-size: 3rem;
-  font-weight: 400;
-  justify-content: center;
-  line-height: 1.01;
-  margin: -4rem 0rem 1.4rem 0rem;
-  white-space: nowrap;
-  width: 1000px;
-  height: 10px;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-.rectangle {
-  background-size: cover;
 
-  border-radius: 3.3rem;
-  flex-shrink: 0;
-  height: 30rem;
-  width: 900px;
+.congratulations {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    flex-shrink: 0;
+    font-family: STIX Two Text, "Source Sans Pro";
+    font-size: 3.6rem;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    white-space: nowrap;
 }
+
+.group {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 20px;
+    /* border-radius: 6.5rem; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    height: 720px;
+    padding: 6.05rem 11.8rem 22.4rem 11.8rem;
+    width: 950px;
+    /* border: 3px solid violet; */
+}
+
+.idcard {
+    align-items: center;
+    color: #efcc73;
+    display: flex;
+    flex-shrink: 0;
+    font-family: STIX Two Text, "Source Sans Pro";
+    font-size: 3rem;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.01;
+    margin: -4rem 0rem 1.4rem 0rem;
+    white-space: nowrap;
+    width: 1000px;
+    height: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.rectangle {
+    background-size: cover;
+    border-radius: 3.3rem;
+    flex-shrink: 0;
+    height: 30rem;
+    width: 900px;
+}
+
 #mtext {
-  border: 2px solid black;
-  width: auto;
-  height: auto;
-  position: absolute;
-  transform: translate(135%, -175%);
-  z-index: 2;
+    /* border: 2px solid black; */
+    width: 500px;
+    height: auto;
+    position: relative;
+    transform: translate(65%, -240%);
+    z-index: 2;
 }
 
 .iden1 {
-  font-size: 24px;
-  position: relative;
-  color: black;
-  font-weight: bold;
-  border: 1px solid blue;
-  text-align: left;
-  padding-left: 30%;
-  padding-bottom: 5%;
-  padding-top: 5%;
-  margin-right: -10%;
+    font-family: STIX Two Text, "Source Sans Pro";
+    font-size: 24px;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    /* border: 1px solid blue; */
+    text-align: left;
+    margin-top: 90px;
+    margin-bottom: -10px;
+    padding-bottom: 30px;
+    width: 500px;
 }
+
+#nametext {
+    font-Family: NanumMyeongjo;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: black;
+    margin: auto;
+    margin-left: 5px;
+    width: 30%;
+}
+
+.hover-text:hover {
+    border: none;
+}
+
+#birthtext {
+    font-Family: NanumMyeongjo;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: black;
+    margin: auto;
+    margin-left: 5px;
+    width: 30%;
+}
+
+.hover-text:hover {
+    border: none;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255, 0.3);
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .iden2 {
-  font-weight: bold;
-  position: relative;
-  font-size: 24px;
-  color: black;
-  border: 1px solid red;
-  text-align: left;
-  padding-top: 5%;
-  padding-left: 30%;
-  padding-bottom: 5%;
-  margin-right: -10%;
+    font-family: STIX Two Text, "Source Sans Pro";
+    position: relative;
+    font-size: 24px;
+    color: black;
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-right: -10%;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    width: 500px;
 }
+
 .iden3 {
-  position: relative;
-  font-weight: bold;
-  font-size: 24px;
-  color: black;
-  text-align: left;
-  padding-top: 5%;
-  padding-left: 30%;
-  padding-bottom: 5%;
-  border: 1px solid yellow;
-  margin-right: -10%;
+    font-family: STIX Two Text, "Source Sans Pro";
+    position: relative;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    /* border: 1px solid yellow; */
+    margin-right: -10%;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    width: 500px;
 }
+
 .iden4 {
-  position: relative;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 30%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: black;
-  margin-right: -10%;
-  border: 1px solid green;
+    font-family: STIX Two Text, "Source Sans Pro";
+    position: relative;
+    font-size: 24px;
+    text-align: left;
+    color: black;
+    margin-right: -10%;
+    /* border: 1px solid green; */
+    padding-bottom: 8px;
+    width: 500px;
 }

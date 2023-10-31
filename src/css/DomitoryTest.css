@@ -1,0 +1,140 @@
+body {
+    background-image: url("../img/bg.png");
+}
+
+#bodyDiv {
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 700px;
+    height: auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+#headBox {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    /*border: 1px solid greenyellow; */
+    display: flow-root;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headBox>div {
+    margin: 50px;
+    padding: 10px;
+}
+
+#answerBox {
+    width: Z00px;
+    height: auto;
+    margin: auto;
+}
+
+#answer {
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 80px;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+div#questionText {
+    /*border: 1px solid purple;*/
+    width: 700px;
+    /*여기 값 확인*/
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#one {
+    /* border: 1px solid blue; */
+    width: 940px;
+    height: 295px;
+}
+
+#two {
+    /* border: 1px solid blue; */
+    width: 940px;
+    height: 295px;
+}
+
+#gaugeBarDiv {
+    /* border: 1px solid red; */
+    width: auto;
+    height: 120px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#progress {
+    appearance: none;
+    width: 80%;
+    height: 20%;
+}
+
+#progress::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    /*box-shadow: inset 3px 3px 10px #ccc;*/
+}
+
+#progress::-webkit-progress-value {
+    border-radius: 30px;
+    background: rgba(224, 167, 60, 0.7);
+    /*background: linear-gradient(to right, #a1a1a1, #1f4baa);*/
+    transition: width 0.8s;
+}
+
+div#questionBox {
+    display: contents;
+    border: 1px solid white;
+    width: 800px;
+    height: auto;
+}
+
+#frameImg {
+    width: 700px;
+    /*border: 1px dotted pink; */
+    display: flex;
+    justify-content: center;
+}
+
+div#q1.answer.last-question {
+    border-radius: 40px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.grade {
+    font-size: 40px;
+    color: white;
+}
+
+#againBtn,
+#mainBtn {
+    width: 130px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 214, 69);
+    border-radius: 10px;
+    font-size: 25px;
+    color: black;
+}

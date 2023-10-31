@@ -29,3 +29,17 @@
 - [x] Side Menu
 
 <br>
+
+**Screen**
+Main
+![screenshot](./src/img/1.png)
+Dormitory Test
+![screenshot](./src/img/2.png)
+Grade Level Test
+![screenshot](./src/img/3.png)
+Select Wand
+![screenshot](./src/img/4.png)
+Student card
+![screenshot](./src/img/5.png)
+Save Image
+![screenshot](./src/img/6.png)
